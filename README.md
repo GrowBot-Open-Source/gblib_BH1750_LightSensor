@@ -1,1 +1,1 @@
-# TemplateLibrary
+# BH1750 Light Sensor GrowBot Library

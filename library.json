@@ -1,8 +1,8 @@
 {
-"name": "gb_SENSORNAME",
+"name": "gb_BH1750_LightSensor",
 "frameworks": "Arduino",
-"keywords": "keywords",
-"description": "Use the sensor XXXXX in the GrowBot system.",
+"keywords": "light",
+"description": "Use the sensor BH1750 light sensor in the GrowBot system.",
 "authors":
 [
     {
