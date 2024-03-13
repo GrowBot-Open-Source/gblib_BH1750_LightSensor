@@ -11,7 +11,7 @@ class gb_BH1750_LightSensor {
         int BH1750_Read;
         int BH1750_Setup;    
     public:
-        gb_BH1750(BH1750address, buff);
+        gb_BH1750_LightSensor(BH1750address, buff);
         bool isLightOn();
         int getLightIntesity();
 };
