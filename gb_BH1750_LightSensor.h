@@ -1,19 +1,46 @@
-#ifndef gb_BH1750_LightSensor.h
-#define gb_BH1750_LightSensor.h
+/*********************************************************************
+ * gb_BH1750_LightSensor.h
+ *
+ * Copyright (C)    20124   [GrowBot Open Source],
+ * GitHub Link :XXXXX
+ * This Library is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Description:Implement DFRobot BH1750 Lightsensor into the growbot system
+ *
+ * Product Links：
+ *
+ * Sensor driver pin：I2C
+ *
+ * author  :  GrowBot
+ * version :  V1.0
+ * date    :  2024-05-14
+ **********************************************************************/
+
+#ifndef gb_BH1750_LightSensor_h
+#define gb_BH1750_LightSensor_h
 
 #include <Arduino.h>
 
-class gb_BH1750_LightSensor {
-    private:
-        byte buff;
-        int BH1750address;
-        void BH1750_Init;
-        int BH1750_Read;
-        int BH1750_Setup;    
-    public:
-        gb_BH1750_LightSensor(BH1750address, buff);
-        bool isLightOn();
-        int getLightIntesity();
+class gb_BH1750_LightSensor
+{
+private:
+    byte buff;
+    int BH1750address;
+    void BH1750_Init;
+    int BH1750_Read;
+    int BH1750_Setup;
+
+public:
+    gb_BH1750_LightSensor(BH1750address, buff);
+
+    // check if light is on or off
+    bool isLightOn();
+
+    // getLightIntensity
+    int getLightIntensity();
 };
 
 #endif
