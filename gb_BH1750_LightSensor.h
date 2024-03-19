@@ -29,18 +29,21 @@ class gb_BH1750_LightSensor
 private:
     byte buff;
     int BH1750address;
-    void BH1750_Init;
-    int BH1750_Read;
-    int BH1750_Setup;
 
 public:
-    gb_BH1750_LightSensor(BH1750address, buff);
+    gb_BH1750_LightSensor(int BH1750address, byte buff);
 
     // check if light is on or off
     bool isLightOn();
 
     // getLightIntensity
     int getLightIntensity();
+
+    void BH1750_Init(int address);
+
+    int BH1750_Read(int address);
+
+    void BH1750_Setup();
 };
 
 #endif

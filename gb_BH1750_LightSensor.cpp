@@ -27,7 +27,7 @@
 // Function Name: gb_BH1750_LightSensor()
 // Function Declaration: create light sensor object
 //********************************************************************************************
-gb_BH1750_LightSensor::gb_BH1750_LightSensor(int BH1750 address, byte buff)
+gb_BH1750_LightSensor::gb_BH1750_LightSensor(int BH1750address, byte buff)
 {
     this->BH1750address = BH1750address;
     this->buff = buff;
@@ -37,7 +37,7 @@ gb_BH1750_LightSensor::gb_BH1750_LightSensor(int BH1750 address, byte buff)
 // Function Name: BH1750_Init()
 // Function Declaration: init light sensor
 //********************************************************************************************
-void gb_BH1750_LightSensor.h::BH1750_Init(int address)
+void gb_BH1750_LightSensor::BH1750_Init(int address)
 {
     Wire.beginTransmission(address);
     Wire.write(0x10);
